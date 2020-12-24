@@ -95,6 +95,17 @@ class ChatScreen extends StatelessWidget {
           itemBuilder: (context, index) {
             return chatListBody[index];
           }),
+      bottomNavigationBar: Container(
+        decoration: BoxDecoration(
+          border: Border(top: BorderSide(color: Colors.black12)),
+        ),
+        height: 60.0,
+        child: Icon(
+          Icons.camera_alt,
+          color: Colors.blue,
+          size: 30.0,
+        ),
+      ),
     );
   }
 }
